@@ -11,3 +11,8 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: public
   wpmVersion: LATEST
+- name: SubstractPublicSvcPackage
+  gitServerName: srcCtrl_AzRepos_Arti
+  gitUrl: https://dev.azure.com/ArtiKhare/_git
+  gitUsername: ArtiKhare
+  gitBranch: main
