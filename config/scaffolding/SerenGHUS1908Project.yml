@@ -8,16 +8,46 @@ packages:
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: OpenWeatherClient
+  version: "1.0"
   wpmServer: https://packages.webmethods.io
   wpmRegistry: public
   wpmVersion: LATEST
 - name: SubstractPublicSvcPackage
+  version: "3.0"
   gitServerName: srcCtrl_AzRepos_Arti
   gitUrl: https://dev.azure.com/ArtiKhare/_git
   gitUsername: ArtiKhare
   gitBranch: main
 - name: AddPublicService
+  version: "1.0"
   gitServerName: srcCtrl_gitlab_Arti
   gitUrl: https://gitlab.com/ArtiKhareGitlab
   gitUsername: ArtiKhareGitlab
   gitBranch: master
+- name: AzRepoMultiplyPackage
+  version: "4.0"
+  gitServerName: srcCtrl_AzRepos_Arti
+  gitUrl: https://dev.azure.com/ArtiKhare/AzRepoMultiplyPackage/_git
+  gitUsername: ArtiKhare
+  gitBranch: main
+services:
+- serviceName: project.serenghus1908.integrations:azrepoPackage
+  packages:
+  - name: SerenGHUS1908Project
+    version: "1.0"
+  - name: AzRepoMultiplyPackage
+    version: "4.0"
+  - name: AddPublicService
+    version: "1.0"
+  - name: SubstractPublicSvcPackage
+    version: "3.0"
+  - name: OpenWeatherClient
+    version: "1.0"
+- serviceName: SubstractPublicSvcPackage:substract_svc
+  packages:
+  - name: SubstractPublicSvcPackage
+    version: "3.0"
+- serviceName: pub.math:subtractInts
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
