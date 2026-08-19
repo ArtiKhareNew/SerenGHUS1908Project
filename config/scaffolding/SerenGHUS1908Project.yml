@@ -16,3 +16,8 @@ packages:
   gitUrl: https://dev.azure.com/ArtiKhare/_git
   gitUsername: ArtiKhare
   gitBranch: main
+- name: AddPublicService
+  gitServerName: srcCtrl_gitlab_Arti
+  gitUrl: https://gitlab.com/ArtiKhareGitlab
+  gitUsername: ArtiKhareGitlab
+  gitBranch: master
