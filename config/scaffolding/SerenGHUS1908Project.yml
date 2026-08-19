@@ -30,6 +30,11 @@ packages:
   gitUrl: https://dev.azure.com/ArtiKhare/AzRepoMultiplyPackage/_git
   gitUsername: ArtiKhare
   gitBranch: main
+- name: XMLBuiltInServices
+  gitServerName: srcGithubCtrl_Arti
+  gitUrl: https://github.com/ArtiKhareNew
+  gitUsername: ArtiKhareNew
+  gitBranch: main
 services:
 - serviceName: project.serenghus1908.integrations:azrepoPackage
   packages:
